@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You Zhang | Academic Homepage</title>
+    <meta name="description" content="Academic homepage of You Zhang, an undergraduate student in Computer Science and Technology at China Agricultural University." />
+    <meta name="author" content="You Zhang" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://iyoyovo.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="You Zhang | Academic Homepage" />
+    <meta property="og:description" content="Undergraduate student in Computer Science and Technology at China Agricultural University." />
+    <meta property="og:url" content="https://iyoyovo.github.io/" />
+    <meta property="og:image" content="https://iyoyovo.github.io/og.png" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="language-page" id="top" data-language-page="en">
+      <header class="site-header">
+        <a class="site-name" href="#top">You Zhang</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <button type="button" data-language-toggle="zh" aria-label="Switch to the Chinese homepage">中文</button>
+        </nav>
+      </header>
+
+      <div class="page-shell">
+        <section class="profile" aria-labelledby="profile-name">
+          <div class="portrait">
+            <img src="profile.png" alt="Portrait of You Zhang" />
+          </div>
+          <div class="profile-copy">
+            <h1 id="profile-name">You Zhang</h1>
+            <p class="degree">Undergraduate Student in Computer Science and Technology</p>
+            <p>College of Information and Electrical Engineering, China Agricultural University<br />Beijing, China</p>
+            <p class="contact-links">
+              <a href="mailto:zhangyou@cau.edu.cn">zhangyou@cau.edu.cn</a>
+              <span aria-hidden="true"> · </span>
+              <a href="https://github.com/iyoyovo" target="_blank" rel="noreferrer">GitHub</a>
+              <span aria-hidden="true"> · </span>
+              <a href="cv_youzhang.pdf" target="_blank" rel="noreferrer">CV</a>
+            </p>
+            <div class="intro-copy">
+              <p>I am an undergraduate student in Computer Science and Technology at China Agricultural University, expecting to graduate in 2027. My current interests lie in efficient artificial intelligence and machine learning systems, particularly their applications in edge intelligence, AIoT, and industrial settings.</p>
+            </div>
+            <p class="focus-line"><strong>Current interests:</strong> Efficient AI &amp; ML Systems · Edge/AIoT · Industrial AI</p>
+          </div>
+        </section>
+
+        <section class="academic-section" id="about">
+          <h2>About Me</h2>
+          <p>At this stage, I am building my foundations through coursework, research and project-based practice, and independent reading. I am especially interested in how machine learning models can be translated into applications that run efficiently on real-world devices and systems.</p>
+          <p>My recent work spans empirical LLM evaluation and decentralized multi-agent reinforcement learning. Across these projects, I aim to combine careful experimental design with systems implementation.</p>
+          <p>I enjoy implementing the methods I learn as working experiments and prototypes, while documenting the problems and observations that arise during the process.</p>
+        </section>
+
+        <section class="academic-section" id="education">
+          <h2>Education</h2>
+          <div class="entry-list">
+            <article class="entry">
+              <time>2023–Present</time>
+              <div>
+                <h3>B.Eng. in Computer Science and Technology</h3>
+                <p>China Agricultural University, Beijing, China</p>
+                <p class="muted">Expected graduation: June 2027</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="academic-section" id="interests">
+          <h2>Academic Interests</h2>
+          <ul class="interest-list">
+            <li><strong>Efficient AI</strong><span>Model compression, quantization, lightweight neural networks, and efficient inference for resource-constrained devices.</span></li>
+            <li><strong>ML Systems and Edge AI</strong><span>Inference frameworks, runtime optimization, resource scheduling, model serving, and edge–cloud collaboration.</span></li>
+            <li><strong>AIoT and Industrial AI</strong><span>Deployment and application of machine learning models in intelligent devices, sensing systems, and industrial settings.</span></li>
+          </ul>
+        </section>
+
+        <section class="academic-section" id="research">
+          <h2>Research &amp; Project Experience</h2>
+          <div class="entry-list project-list">
+            <article class="entry project-entry">
+              <time>Jun–Aug 2026</time>
+              <div>
+                <h3>Task Information and Label Order in Zero-Shot LLM Classification</h3>
+                <p class="project-meta">Independent Research · Zero-Shot LLM Evaluation</p>
+                <ul class="entry-bullets">
+                  <li>Studied the joint effect of class-definition text and label order on zero-shot classification, and completed controlled experiments on a disjoint 7,600-example confirmation set.</li>
+                  <li>Extended the evaluation to three models, three tasks, and all 24 AG News label permutations, yielding 840 valid experimental conditions and 4,001,040 per-example predictions; the resulting manuscript was submitted to Information Processing &amp; Management.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="entry project-entry">
+              <time>Aug 2026</time>
+              <div>
+                <h3>Fully Decentralized Multi-Agent Reinforcement Learning</h3>
+                <p class="project-meta">Individual Summer Research Project, Zhejiang University · Supervisor: Prof. Fei Miao</p>
+                <ul class="entry-bullets">
+                  <li>Implemented and evaluated Assignment-Guided Continuous MAPPO; Continuous+Guide achieved a 41.2% end-of-episode success rate, 23.6 percentage points above Discrete+Guide.</li>
+                  <li>Implemented a local MPC controller without communication or global state; with only a 0.8-point decrease in success rate, it reduced intervention and action saturation by 9.17 and 13.98 percentage points, respectively.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="entry project-entry">
+              <time>Jul 2025–Jun 2026</time>
+              <div>
+                <h3>MaizeGuard: Multi-Ear Abnormal-Region Analysis and Local Deployment</h3>
+                <ul class="entry-bullets">
+                  <li>Built a locally runnable dual-ONNX inference pipeline for multi-ear localization, instance splitting, abnormal-region segmentation, and area-ratio reporting.</li>
+                  <li>Completed five rounds of AI candidate generation and human adjudication covering 180 images and 402 ears; at batch=6, CPU and CUDA inference were 1.28× and 1.18× faster than sequential processing, respectively.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="academic-section" id="experience">
+          <h2>Industry Experience</h2>
+          <div class="entry-list project-list">
+            <article class="entry project-entry">
+              <time>Jan–Mar 2026</time>
+              <div>
+                <h3>360 Digital Security Group · Web Backend Development Intern</h3>
+                <p class="project-meta">Objects365-Based YOLOv8 Object Detection and NCNN Inference Pipeline</p>
+                <ul class="entry-bullets">
+                  <li>Built a data-processing pipeline for a 50-class detection task that screened and processed more than 460,000 Objects365 v1 images, including class mapping, anomalous-data filtering, COCO-to-YOLO conversion, and visual verification.</li>
+                  <li>Participated in multi-GPU YOLOv8n training and deployment conversion, converted the PyTorch model to NCNN, and validated 640 × 640 single-image inference; the exported model was approximately 11.6 MB with 58.4 ms latency in the test environment.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="academic-section" id="skills">
+          <h2>Technical Skills</h2>
+          <dl class="skills-list">
+            <div><dt>Programming</dt><dd>Python, C/C++, SQL</dd></div>
+            <div><dt>Tools</dt><dd>PyTorch, OpenCV, scikit-learn, Git, Linux/Bash, LaTeX</dd></div>
+          </dl>
+        </section>
+
+        <section class="academic-section contact-section" id="contact">
+          <h2>Contact</h2>
+          <p>The best way to reach me is by email. I welcome conversations about undergraduate research, summer research opportunities, MPhil/PhD applications, and related collaborations.</p>
+          <p><a href="mailto:zhangyou@cau.edu.cn">zhangyou@cau.edu.cn</a></p>
+        </section>
+
+        <footer class="site-footer">
+          <span>© 2026 You Zhang · Last updated: August 2026</span>
+          <a href="#top">Back to top</a>
+        </footer>
+      </div>
+    </main>
+
+    <main class="language-page" id="top-zh" data-language-page="zh" hidden>
+      <header class="site-header">
+        <a class="site-name" href="#top-zh">张优</a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#about-zh">关于</a>
+          <a href="#education-zh">教育</a>
+          <a href="#research-zh">科研</a>
+          <a href="#experience-zh">实习</a>
+          <a href="#skills-zh">技能</a>
+          <a href="#contact-zh">联系</a>
+          <button type="button" data-language-toggle="en" aria-label="切换至英文主页">English</button>
+        </nav>
+      </header>
+
+      <div class="page-shell">
+        <section class="profile" aria-labelledby="profile-name-zh">
+          <div class="portrait">
+            <img src="profile.png" alt="张优的个人照片" />
+          </div>
+          <div class="profile-copy">
+            <h1 id="profile-name-zh">张优</h1>
+            <p class="degree">计算机科学与技术本科生</p>
+            <p>信息与电气工程学院，中国农业大学<br />北京，中国</p>
+            <p class="contact-links">
+              <a href="mailto:zhangyou@cau.edu.cn">zhangyou@cau.edu.cn</a>
+              <span aria-hidden="true"> · </span>
+              <a href="https://github.com/iyoyovo" target="_blank" rel="noreferrer">GitHub</a>
+              <span aria-hidden="true"> · </span>
+              <a href="cv_youzhang.pdf" target="_blank" rel="noreferrer">简历</a>
+            </p>
+            <div class="intro-copy">
+              <p>我是中国农业大学计算机科学与技术专业本科生，预计于2027年毕业。我目前关注高效人工智能与机器学习系统，尤其是它们在边缘智能、AIoT和工业场景中的应用。</p>
+            </div>
+            <p class="focus-line"><strong>当前兴趣：</strong> Efficient AI &amp; ML Systems · Edge/AIoT · Industrial AI</p>
+          </div>
+        </section>
+
+        <section class="academic-section" id="about-zh">
+          <h2>关于我</h2>
+          <p>现阶段，我主要通过课程、科研与项目实践和自主阅读积累基础。我对如何将机器学习模型转化为能够在真实设备和系统中高效运行的应用尤其感兴趣。</p>
+          <p>近期工作涉及大语言模型实证评测和去中心化多智能体强化学习。在这些项目中，我希望将严谨的实验设计与系统实现结合起来。</p>
+          <p>我喜欢将学到的方法实现为可以运行的实验和原型，并记录实现过程中的问题与思考。</p>
+        </section>
+
+        <section class="academic-section" id="education-zh">
+          <h2>教育经历</h2>
+          <div class="entry-list">
+            <article class="entry">
+              <time>2023–至今</time>
+              <div>
+                <h3>计算机科学与技术，工学学士</h3>
+                <p>中国农业大学，北京，中国</p>
+                <p class="muted">预计毕业：2027年6月</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="academic-section" id="interests-zh">
+          <h2>学术兴趣</h2>
+          <ul class="interest-list">
+            <li><strong>Efficient AI</strong><span>模型压缩、量化、轻量化网络，以及面向资源受限设备的高效推理。</span></li>
+            <li><strong>ML Systems与Edge AI</strong><span>推理框架、运行时优化、资源调度、模型服务与边云协同。</span></li>
+            <li><strong>AIoT与Industrial AI</strong><span>机器学习模型在智能设备、传感系统和工业场景中的部署与应用。</span></li>
+          </ul>
+        </section>
+
+        <section class="academic-section" id="research-zh">
+          <h2>科研与项目经历</h2>
+          <div class="entry-list project-list">
+            <article class="entry project-entry">
+              <time>2026.06–2026.08</time>
+              <div>
+                <h3>任务信息与标签顺序对零样本大语言模型分类的影响</h3>
+                <p class="project-meta">独立研究 · 零样本大语言模型评测</p>
+                <ul class="entry-bullets">
+                  <li>研究类别定义文本与标签排列顺序对零样本分类结果的共同影响，并在7,600条独立确认样本上完成受控实验。</li>
+                  <li>将评测扩展至3个模型、3个任务及AG News全部24种标签排列，共形成840个有效实验条件和4,001,040条逐样本预测记录；相关论文已投稿至 Information Processing &amp; Management。</li>
+                </ul>
+              </div>
+            </article>
+            <article class="entry project-entry">
+              <time>2026.08</time>
+              <div>
+                <h3>完全去中心化多智能体强化学习</h3>
+                <p class="project-meta">浙江大学暑期个人科研项目 · 导师：苗菲教授</p>
+                <ul class="entry-bullets">
+                  <li>实现并评估 Assignment-Guided Continuous MAPPO；Continuous+Guide 的回合末成功率达到41.2%，较 Discrete+Guide 高23.6个百分点。</li>
+                  <li>实现无需通信和全局状态的局部MPC控制器，在成功率仅下降0.8个百分点的情况下，将干预率和动作饱和率分别降低9.17和13.98个百分点。</li>
+                </ul>
+              </div>
+            </article>
+            <article class="entry project-entry">
+              <time>2025.07–2026.06</time>
+              <div>
+                <h3>MaizeGuard：多果穗异常区域分析与本地部署</h3>
+                <ul class="entry-bullets">
+                  <li>面向多果穗图像中的果穗定位、实例拆分、异常区域分割与面积率统计，构建可本地运行的双ONNX推理管线。</li>
+                  <li>完成5轮AI候选生成与人工裁决，覆盖180张图像和402个果穗；batch=6时，CPU和CUDA推理速度较顺序处理分别提升1.28倍和1.18倍。</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="academic-section" id="experience-zh">
+          <h2>实习经历</h2>
+          <div class="entry-list project-list">
+            <article class="entry project-entry">
+              <time>2026.01–2026.03</time>
+              <div>
+                <h3>三六零数字安全科技集团有限公司 · Web服务端开发实习生</h3>
+                <p class="project-meta">基于Objects365的YOLOv8目标检测与NCNN推理链路</p>
+                <ul class="entry-bullets">
+                  <li>面向50类目标检测任务构建数据处理流水线，筛选并处理46万余张Objects365 v1图像，完成类别映射、异常数据过滤、COCO到YOLO标注转换及可视化核验。</li>
+                  <li>参与YOLOv8n多GPU训练与部署转换，完成PyTorch模型向NCNN格式迁移及640×640单图推理验证；导出模型约11.6 MB，测试环境推理耗时58.4 ms。</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="academic-section" id="skills-zh">
+          <h2>专业技能</h2>
+          <dl class="skills-list">
+            <div><dt>编程语言</dt><dd>Python、C/C++、SQL</dd></div>
+            <div><dt>工具</dt><dd>PyTorch、OpenCV、scikit-learn、Git、Linux/Bash、LaTeX</dd></div>
+          </dl>
+        </section>
+
+        <section class="academic-section contact-section" id="contact-zh">
+          <h2>联系方式</h2>
+          <p>电子邮件是联系我的最佳方式。欢迎就本科科研、暑期研究、MPhil/PhD申请及相关合作与我联系。</p>
+          <p><a href="mailto:zhangyou@cau.edu.cn">zhangyou@cau.edu.cn</a></p>
+        </section>
+
+        <footer class="site-footer">
+          <span>© 2026 张优 · 最后更新：2026年8月</span>
+          <a href="#top-zh">返回顶部</a>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
