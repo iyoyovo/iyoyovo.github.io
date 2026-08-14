@@ -94,19 +94,19 @@
                 <h3>Task Information and Label Order in Zero-Shot LLM Classification</h3>
                 <p class="project-meta">Independent Research · Zero-Shot LLM Evaluation</p>
                 <ul class="entry-bullets">
-                  <li>Studied the joint effect of class-definition text and label order on zero-shot classification, and completed controlled experiments on a disjoint 7,600-example confirmation set.</li>
-                  <li>Extended the evaluation to three models, three tasks, and all 24 AG News label permutations, yielding 840 valid experimental conditions and 4,001,040 per-example predictions; the resulting manuscript was submitted to Information Processing &amp; Management.</li>
+                  <li>Ran a frozen 2-model × 3-paraphrase × 4-order confirmation study on 7,600 disjoint examples. Phi-3-mini showed a +17.969 pp interaction (95% CI [16.811, 19.075]); Qwen2.5-1.5B did not meet the predefined robustness criterion.</li>
+                  <li>Extended the study to three model checkpoints, three tasks, and all 24 AG News label permutations (840 valid conditions; 4,001,040 predictions), and submitted the manuscript to Information Processing &amp; Management.</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>Aug 2026</time>
               <div>
-                <h3>Fully Decentralized Multi-Agent Reinforcement Learning</h3>
+                <h3>Continuous-Action MAPPO with Communication-Free Local MPC</h3>
                 <p class="project-meta">Individual Summer Research Project, Zhejiang University · Supervisor: Prof. Fei Miao</p>
                 <ul class="entry-bullets">
-                  <li>Implemented and evaluated Assignment-Guided Continuous MAPPO; Continuous+Guide achieved a 41.2% end-of-episode success rate, 23.6 percentage points above Discrete+Guide.</li>
-                  <li>Implemented a local MPC controller without communication or global state; with only a 0.8-point decrease in success rate, it reduced intervention and action saturation by 9.17 and 13.98 percentage points, respectively.</li>
+                  <li>Implemented assignment-guided continuous-action MAPPO; in a 2×2 ablation over five training seeds, it reached 41.2% terminal success, 23.6 percentage points above its discrete-action counterpart.</li>
+                  <li>Developed H=5 communication-free local MPC; across five frozen policies and 1,500 locked episodes, it reduced intervention and action saturation by 9.2 and 14.0 points while success changed from 62.4% to 61.6%, passing all 19 criteria.</li>
                 </ul>
               </div>
             </article>
@@ -116,7 +116,7 @@
                 <h3>MaizeGuard: Multi-Ear Abnormal-Region Analysis and Local Deployment</h3>
                 <ul class="entry-bullets">
                   <li>Built a locally runnable dual-ONNX inference pipeline for multi-ear localization, instance splitting, abnormal-region segmentation, and area-ratio reporting.</li>
-                  <li>Completed five rounds of AI candidate generation and human adjudication covering 180 images and 402 ears; at batch=6, CPU and CUDA inference were 1.28× and 1.18× faster than sequential processing, respectively.</li>
+                  <li>Completed five human-adjudication rounds covering 180 images and 402 ears, yielding 285 trainable pseudo-labels. Dynamic batching raised CPU throughput by 28.2% to 107.0 ears/s; the full pipeline averaged 234.5 ms, with CUDA execution validated.</li>
                 </ul>
               </div>
             </article>
@@ -234,22 +234,22 @@
             <article class="entry project-entry">
               <time>2026.06–2026.08</time>
               <div>
-                <h3>任务信息与标签顺序对零样本大语言模型分类的影响</h3>
+                <h3>任务说明增量与标签顺序对零样本LLM分类的交互影响</h3>
                 <p class="project-meta">独立研究 · 零样本大语言模型评测</p>
                 <ul class="entry-bullets">
-                  <li>研究类别定义文本与标签排列顺序对零样本分类结果的共同影响，并在7,600条独立确认样本上完成受控实验。</li>
-                  <li>将评测扩展至3个模型、3个任务及AG News全部24种标签排列，共形成840个有效实验条件和4,001,040条逐样本预测记录；相关论文已投稿至 Information Processing &amp; Management。</li>
+                  <li>在7,600条独立样本上执行2模型×3组措辞×4种顺序的冻结确认实验；Phi-3-mini交互效应为+17.969个百分点（95% CI [16.811, 19.075]），Qwen2.5-1.5B未通过预定义稳健性标准。</li>
+                  <li>将研究扩展至3个模型、3个任务及AG News全部24种标签排列（840个有效条件、4,001,040条预测），并完成论文投稿至 Information Processing &amp; Management。</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>2026.08</time>
               <div>
-                <h3>完全去中心化多智能体强化学习</h3>
-                <p class="project-meta">浙江大学暑期个人科研项目 · 导师：苗菲教授</p>
+                <h3>连续动作MAPPO与无通信局部MPC</h3>
+                <p class="project-meta">浙江大学暑期科研项目 · 导师：苗菲教授 · 个人项目</p>
                 <ul class="entry-bullets">
-                  <li>实现并评估 Assignment-Guided Continuous MAPPO；Continuous+Guide 的回合末成功率达到41.2%，较 Discrete+Guide 高23.6个百分点。</li>
-                  <li>实现无需通信和全局状态的局部MPC控制器，在成功率仅下降0.8个百分点的情况下，将干预率和动作饱和率分别降低9.17和13.98个百分点。</li>
+                  <li>实现带分配引导的连续动作MAPPO；在覆盖5个训练种子的2×2消融中，回合末成功率为41.2%，较对应离散动作配置高23.6个百分点。</li>
+                  <li>实现H=5无通信局部MPC；在5个冻结策略、共1,500个锁定评估回合中，干预率和动作饱和率分别降低9.2和14.0个百分点，成功率由62.4%变为61.6%，并通过全部19项标准。</li>
                 </ul>
               </div>
             </article>
@@ -259,7 +259,7 @@
                 <h3>MaizeGuard：多果穗异常区域分析与本地部署</h3>
                 <ul class="entry-bullets">
                   <li>面向多果穗图像中的果穗定位、实例拆分、异常区域分割与面积率统计，构建可本地运行的双ONNX推理管线。</li>
-                  <li>完成5轮AI候选生成与人工裁决，覆盖180张图像和402个果穗；batch=6时，CPU和CUDA推理速度较顺序处理分别提升1.28倍和1.18倍。</li>
+                  <li>完成5轮人工裁决，覆盖180张图像和402个果穗，形成285个可训练伪标签。动态批处理将CPU吞吐提升28.2%至107.0个果穗/秒；完整管线平均耗时234.5 ms，并完成CUDA验证。</li>
                 </ul>
               </div>
             </article>
