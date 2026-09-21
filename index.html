@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>You Zhang</title>
-    <meta name="description" content="Academic homepage of You Zhang, featuring work in AI systems, efficient AI, edge AI, and AIoT." />
+    <meta name="description" content="Academic homepage of You Zhang, featuring work in efficient AI systems, inference systems, heterogeneous computing, and empirical LLM evaluation." />
     <meta name="author" content="You Zhang" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://iyoyovo.github.io/" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles.css" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="You Zhang" />
-    <meta property="og:description" content="AI systems, efficient AI, edge AI, and AIoT." />
+    <meta property="og:description" content="Efficient AI systems, inference systems, heterogeneous computing, and empirical LLM evaluation." />
     <meta property="og:url" content="https://iyoyovo.github.io/" />
     <meta property="og:image" content="https://iyoyovo.github.io/og.png" />
     <script defer src="script.js"></script>
@@ -49,16 +49,16 @@
               <a href="cv_youzhang.pdf" target="_blank" rel="noreferrer">CV</a>
             </p>
             <div class="intro-copy">
-              <p>I am an undergraduate student in Computer Science and Technology at <a href="https://en.cau.edu.cn/" target="_blank" rel="noreferrer">China Agricultural University</a>, expecting to graduate in 2027. My current interests center on AI systems and efficient AI, particularly efficient inference and the deployment of machine learning models on resource-constrained devices, edge platforms, and AIoT systems.</p>
+              <p>I am an undergraduate student in Computer Science and Technology at <a href="https://en.cau.edu.cn/" target="_blank" rel="noreferrer">China Agricultural University</a>, expecting to graduate in 2027. My current interests center on efficient AI systems, inference systems, and heterogeneous computing, with a focus on efficient model inference and deployment across real-world hardware platforms.</p>
             </div>
-            <p class="focus-line"><strong>Current interests:</strong> AI Systems · Efficient AI · Edge AI &amp; AIoT</p>
+            <p class="focus-line"><strong>Current interests:</strong> Efficient AI Systems · Inference Systems · Heterogeneous Computing</p>
           </div>
         </section>
 
         <section class="academic-section" id="about">
           <h2>About Me</h2>
-          <p>I continue to deepen my understanding of machine learning and systems implementation through coursework, research, project development, and independent reading. I am particularly interested in translating machine learning models into applications that run efficiently on real-world devices and systems.</p>
-          <p>My recent work includes empirical LLM evaluation and decentralized multi-agent reinforcement learning.</p>
+          <p>I continue to deepen my understanding of machine learning and systems implementation through coursework, research, project development, and independent reading. I am particularly interested in translating machine learning models into efficient and reliable systems for real-world devices.</p>
+          <p>My recent work includes empirical LLM evaluation, decentralized multi-agent coordination, and lightweight computer-vision deployment.</p>
           <p>I enjoy implementing the methods I learn as working experiments and prototypes, while documenting the problems and observations that arise during the process.</p>
         </section>
 
@@ -79,9 +79,9 @@
         <section class="academic-section" id="interests">
           <h2>Research Interests</h2>
           <ul class="interest-list">
-            <li><strong>AI Systems</strong><span>Systems support for the efficient development, evaluation, and deployment of machine learning models, including inference frameworks and runtime optimization.</span></li>
-            <li><strong>Efficient AI</strong><span>Model compression, quantization, lightweight neural networks, and hardware-aware inference under compute and memory constraints.</span></li>
-            <li><strong>Edge AI and AIoT</strong><span>Deployment of machine learning models on edge devices and intelligent sensing systems, with attention to resource efficiency and real-world reliability.</span></li>
+            <li><strong>Efficient AI Systems</strong><span>Systems support for efficient machine-learning development and deployment, including model optimization, runtime efficiency, and resource-aware execution.</span></li>
+            <li><strong>Inference Systems</strong><span>Model conversion, inference frameworks, batching, runtime optimization, and performance evaluation for practical machine-learning workloads.</span></li>
+            <li><strong>Heterogeneous Computing</strong><span>Hardware-aware inference across CPUs, GPUs, and other accelerators under compute, memory, and deployment constraints.</span></li>
           </ul>
         </section>
 
@@ -91,32 +91,32 @@
             <article class="entry project-entry">
               <time>May–Aug 2026</time>
               <div>
-                <h3>Task Information and Label Order in Zero-Shot LLM Classification</h3>
+                <h3>Prompt Evaluation Reliability in Zero-Shot Text Classification</h3>
                 <p class="project-meta">Independent Research · Zero-Shot LLM Evaluation</p>
                 <ul class="entry-bullets">
-                  <li>Conducted controlled zero-shot LLM evaluations to study how added task information interacts with label order across multiple models and tasks, using a disjoint confirmation set and a frozen paired analysis.</li>
-                  <li>Extended the study with robustness checks, alternative scoring rules, semantic controls, and comprehensive label-order evaluations; completed and submitted a manuscript based on this work.</li>
+                  <li>Investigated the reliability of prompt evaluation in zero-shot text classification by testing how class-description content and label ordering interact across pretrained models.</li>
+                  <li>Designed disjoint development and confirmation sets, froze the confirmation protocol before evaluation, and completed a research manuscript and supporting code with robustness analyses across multiple models, tasks, scoring rules, and label orders.</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>Aug 2026</time>
               <div>
-                <h3>Continuous-Action MAPPO with Communication-Free Local MPC</h3>
+                <h3>Decentralized Multi-Agent Coordination via Reinforcement Learning and Local Planning</h3>
                 <p class="project-meta">Individual Summer Research Project, Zhejiang University · Supervisor: <a href="http://feimiao.org/" target="_blank" rel="noreferrer">Prof. Fei Miao</a></p>
                 <ul class="entry-bullets">
-                  <li>Implemented assignment-guided continuous-action MAPPO; in a 2×2 ablation over five training seeds, it reached 41.2% terminal success, 23.6 percentage points above its discrete-action counterpart.</li>
-                  <li>Developed H=5 communication-free local MPC; across five frozen policies and 1,500 locked episodes, it reduced intervention and action saturation by 9.2 and 14.0 points while success changed from 62.4% to 61.6%, passing all 19 criteria.</li>
+                  <li>Combined MAPPO policy learning with local model predictive control in MPE2 to coordinate three communication-free agents covering three targets while reducing collisions.</li>
+                  <li>Evaluated action parameterization and assignment guidance through a 2×2 ablation over five training seeds and 500 episodes per configuration. Continuous actions with assignment guidance reached 41.2% terminal success, 23.6 percentage points above the guided discrete policy; controller tests reduced intervention and action saturation by 9.2 and 14.0 points while success changed from 62.4% to 61.6%.</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>Jul 2025–Jun 2026</time>
               <div>
-                <h3>MaizeGuard: Multi-Ear Abnormal-Region Analysis and Local Deployment <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
+                <h3>MaizeGuard: Lightweight Maize Ear Anomaly Segmentation System <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
                 <ul class="entry-bullets">
-                  <li>Built a locally runnable dual-ONNX inference pipeline for multi-ear localization, instance splitting, abnormal-region segmentation, and area-ratio reporting.</li>
-                  <li>Completed five human-adjudication rounds covering 180 images and 402 ears, yielding 285 trainable pseudo-labels. Dynamic batching raised CPU throughput by 28.2% to 107.0 ears/s; the full pipeline averaged 234.5 ms, with CUDA execution validated.</li>
+                  <li>Developed a local two-stage system that combines full-image foreground localization and instance splitting with batched segmentation of ear crops, producing per-ear abnormality masks and area ratios.</li>
+                  <li>Designed a three-class annotation workflow and reviewed 402 ears from 180 images to produce 285 human-adjudicated training pseudo-labels. On a six-ear input, CPU dynamic batching increased abnormal-region segmenter throughput from 83.5 to 107.0 ears/s (1.28×); the complete in-memory pipeline averaged 234.5 ms.</li>
                   <li>Software Copyright Registration: The project software was registered in China (Reg. No. 2026SR0822662, 2026).</li>
                 </ul>
               </div>
@@ -146,7 +146,7 @@
                 <p class="project-meta">Objects365-Based YOLOv8 Object Detection and NCNN Inference Pipeline</p>
                 <ul class="entry-bullets">
                   <li>Built a data-processing pipeline for a 50-class detection task that screened and processed more than 460,000 Objects365 v1 images, including class mapping, anomalous-data filtering, COCO-to-YOLO conversion, and visual verification.</li>
-                  <li>Participated in multi-GPU YOLOv8n training and deployment conversion, converted the PyTorch model to NCNN, and validated 640 × 640 single-image inference; the exported model was approximately 11.6 MB with 58.4 ms latency in the test environment.</li>
+                  <li>Participated in multi-GPU YOLOv8n training, exported the trained model to FP32 NCNN format, and completed single-image object-detection validation at 640 × 640 input resolution.</li>
                 </ul>
               </div>
             </article>
@@ -168,7 +168,7 @@
         </section>
 
         <footer class="site-footer">
-          <span>© 2026 You Zhang · Last updated: August 2026</span>
+          <span>© 2026 You Zhang · Last updated: September 2026</span>
           <a href="#top">Back to top</a>
         </footer>
       </div>
@@ -205,16 +205,16 @@
               <a href="cv_youzhang.pdf" target="_blank" rel="noreferrer">简历</a>
             </p>
             <div class="intro-copy">
-              <p>我是<a href="https://www.cau.edu.cn/" target="_blank" rel="noreferrer">中国农业大学</a>计算机科学与技术专业本科生，预计于2027年毕业。我目前关注AI系统与高效AI，尤其是机器学习模型在资源受限设备、边缘平台和AIoT系统中的高效推理与部署。</p>
+              <p>我是<a href="https://www.cau.edu.cn/" target="_blank" rel="noreferrer">中国农业大学</a>计算机科学与技术专业本科生，预计于2027年毕业。我目前关注高效AI系统、推理系统与异构计算，尤其关注机器学习模型在真实硬件平台上的高效推理与部署。</p>
             </div>
-            <p class="focus-line"><strong>当前兴趣：</strong> AI Systems · Efficient AI · Edge AI &amp; AIoT</p>
+            <p class="focus-line"><strong>当前兴趣：</strong> Efficient AI Systems · Inference Systems · Heterogeneous Computing</p>
           </div>
         </section>
 
         <section class="academic-section" id="about-zh">
           <h2>关于我</h2>
-          <p>我通过课程学习、科研实践、项目开发与自主阅读，持续深化对机器学习与系统实现的理解。我尤其关注如何将机器学习模型转化为能够在真实设备和系统中高效运行的应用。</p>
-          <p>我近期的工作涉及大语言模型实证评测和去中心化多智能体强化学习。</p>
+          <p>我通过课程学习、科研实践、项目开发与自主阅读，持续深化对机器学习与系统实现的理解。我尤其关注如何将机器学习模型转化为能够在真实设备上高效、可靠运行的系统。</p>
+          <p>我近期的工作涉及大语言模型实证评测、分散式多智能体协作和轻量化计算机视觉部署。</p>
           <p>我喜欢将学到的方法实现为可以运行的实验和原型，并记录实现过程中的问题与思考。</p>
         </section>
 
@@ -235,9 +235,9 @@
         <section class="academic-section" id="interests-zh">
           <h2>研究兴趣</h2>
           <ul class="interest-list">
-            <li><strong>AI系统</strong><span>面向机器学习模型高效开发、评测与部署的系统支持，包括推理框架与运行时优化。</span></li>
-            <li><strong>高效AI</strong><span>模型压缩、量化、轻量化网络，以及计算和内存约束下的硬件感知推理。</span></li>
-            <li><strong>边缘AI与AIoT</strong><span>机器学习模型在边缘设备与智能感知系统中的部署，关注资源效率与真实场景可靠性。</span></li>
+            <li><strong>高效AI系统</strong><span>面向机器学习模型高效开发与部署的系统支持，包括模型优化、运行时效率和资源感知执行。</span></li>
+            <li><strong>推理系统</strong><span>面向实际机器学习负载的模型转换、推理框架、批处理、运行时优化与性能评测。</span></li>
+            <li><strong>异构计算</strong><span>面向CPU、GPU及其他加速器的硬件感知推理，关注计算、内存与部署约束。</span></li>
           </ul>
         </section>
 
@@ -247,32 +247,32 @@
             <article class="entry project-entry">
               <time>2026.05–2026.08</time>
               <div>
-                <h3>任务说明增量与标签顺序对零样本LLM分类的交互影响</h3>
+                <h3>零样本文本分类中的提示词评估可靠性研究</h3>
                 <p class="project-meta">独立研究 · 零样本大语言模型评测</p>
                 <ul class="entry-bullets">
-                  <li>开展受控零样本大语言模型评测，研究新增任务信息与标签顺序在多个模型和任务中的交互影响，并采用与开发集不重叠的确认集和冻结的配对分析。</li>
-                  <li>通过稳健性检验、替代评分规则、语义控制和系统性的标签顺序评测扩展研究；已基于该研究完成并提交论文。</li>
+                  <li>通过测试类别说明内容与标签排列顺序在预训练模型中的交互，研究零样本文本分类中提示词评估的可靠性。</li>
+                  <li>设计互不重叠的开发集与确认集，在评测前冻结确认方案，并完成研究论文与配套代码；进一步在多个模型、任务、评分规则和标签顺序上开展稳健性分析。</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>2026.08</time>
               <div>
-                <h3>连续动作MAPPO与无通信局部MPC</h3>
-                <p class="project-meta">浙江大学暑期科研项目 · 导师：<a href="http://feimiao.org/" target="_blank" rel="noreferrer">苗菲教授</a> · 个人项目</p>
+                <h3>基于强化学习与局部规划的分散式多智能体协作</h3>
+                <p class="project-meta">浙江大学个人暑期科研项目 · 导师：<a href="http://feimiao.org/" target="_blank" rel="noreferrer">苗菲教授</a></p>
                 <ul class="entry-bullets">
-                  <li>实现带分配引导的连续动作MAPPO；在覆盖5个训练种子的2×2消融中，回合末成功率为41.2%，较对应离散动作配置高23.6个百分点。</li>
-                  <li>实现H=5无通信局部MPC；在5个冻结策略、共1,500个锁定评估回合中，干预率和动作饱和率分别降低9.2和14.0个百分点，成功率由62.4%变为61.6%，并通过全部19项标准。</li>
+                  <li>在MPE2中结合MAPPO策略学习与局部模型预测控制，协调三个无通信智能体覆盖三个目标点并减少碰撞。</li>
+                  <li>通过覆盖5个训练种子、每种配置500个评估回合的2×2消融分析动作参数化与分配引导；连续动作与分配引导组合的回合末成功率为41.2%，较带引导的离散策略高23.6个百分点。控制器测试中，干预率和动作饱和率分别降低9.2和14.0个百分点，成功率由62.4%变为61.6%。</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>2025.07–2026.06</time>
               <div>
-                <h3>MaizeGuard：多果穗异常区域分析与本地部署 <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
+                <h3>MaizeGuard：轻量化玉米果穗异常分割系统 <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
                 <ul class="entry-bullets">
-                  <li>面向多果穗图像中的果穗定位、实例拆分、异常区域分割与面积率统计，构建可本地运行的双ONNX推理管线。</li>
-                  <li>完成5轮人工裁决，覆盖180张图像和402个果穗，形成285个可训练伪标签。动态批处理将CPU吞吐提升28.2%至107.0个果穗/秒；完整管线平均耗时234.5 ms，并完成CUDA验证。</li>
+                  <li>开发本地两阶段系统，将整图前景定位与实例拆分同果穗裁剪批量分割结合，输出逐穗异常掩膜及面积率。</li>
+                  <li>设计三类标注流程，审核180张图片中的402根果穗并形成285个经人工裁决的训练伪标签。在6穗输入下，CPU动态批处理将异常分割吞吐量从83.5提升至107.0穗/秒（1.28×），完整内存流程平均延迟为234.5 ms。</li>
                   <li>软件著作权登记：项目软件完成计算机软件著作权登记（登记号：2026SR0822662，2026）。</li>
                 </ul>
               </div>
@@ -302,7 +302,7 @@
                 <p class="project-meta">基于Objects365的YOLOv8目标检测与NCNN推理链路</p>
                 <ul class="entry-bullets">
                   <li>面向50类目标检测任务构建数据处理流水线，筛选并处理46万余张Objects365 v1图像，完成类别映射、异常数据过滤、COCO到YOLO标注转换及可视化核验。</li>
-                  <li>参与YOLOv8n多GPU训练与部署转换，完成PyTorch模型向NCNN格式迁移及640×640单图推理验证；导出模型约11.6 MB，测试环境推理耗时58.4 ms。</li>
+                  <li>参与YOLOv8n多GPU训练，将训练模型导出为FP32 NCNN格式，并完成640×640输入的单图目标检测验证。</li>
                 </ul>
               </div>
             </article>
@@ -324,7 +324,7 @@
         </section>
 
         <footer class="site-footer">
-          <span>© 2026 张优 · 最后更新：2026年8月</span>
+          <span>© 2026 张优 · 最后更新：2026年9月</span>
           <a href="#top-zh">返回顶部</a>
         </footer>
       </div>
