@@ -58,7 +58,7 @@
         <section class="academic-section" id="about">
           <h2>About Me</h2>
           <p>I continue to deepen my understanding of machine learning and systems implementation through coursework, research, project development, and independent reading. I am particularly interested in translating machine learning models into efficient and reliable systems for real-world devices.</p>
-          <p>My recent work includes empirical LLM evaluation, decentralized multi-agent coordination, and lightweight computer-vision deployment.</p>
+          <p>My recent work includes task-aware inference optimization, zero-shot LLM evaluation, and multi-agent coordination.</p>
           <p>I enjoy implementing the methods I learn as working experiments and prototypes, while documenting the problems and observations that arise during the process.</p>
         </section>
 
@@ -71,6 +71,7 @@
                 <h3>B.Eng. in Computer Science and Technology</h3>
                 <p>China Agricultural University, Beijing, China</p>
                 <p class="muted">Expected graduation: July 2027</p>
+                <p>Academic scholarships: First-Class (2025–2026); Second-Class (2023–2024).</p>
               </div>
             </article>
           </div>
@@ -89,35 +90,35 @@
           <h2>Research &amp; Project Experience</h2>
           <div class="entry-list project-list">
             <article class="entry project-entry">
+              <time>Jul 2025–Jun 2026</time>
+              <div>
+                <h3>MaizeGuard: Task-Aware Inference System Optimization <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
+                <ul class="entry-bullets">
+                  <li>Built a CPU/CUDA dual-ONNX system for multi-ear maize anomaly analysis, including an application-level runtime prototype with bounded in-flight tasks, CPU workers, and a device execution thread to overlap pipeline stages.</li>
+                  <li>Used stage-level profiling to optimize local morphology and component-local splitting while preserving boundary semantics and verifying full-output equivalence. Across 120 stratified native-resolution images and 20 paired passes on four physical Ryzen 9 7945HX cores, local processing reduced mean CPU pipeline latency by 51.5% (1.46 to 0.71 s/image) versus a same-model full-frame reference.</li>
+                  <li>Software Copyright Registration: The project software was registered in China (Reg. No. 2026SR0822662, 2026).</li>
+                </ul>
+              </div>
+            </article>
+            <article class="entry project-entry">
               <time>May–Aug 2026</time>
               <div>
-                <h3>Prompt Evaluation Reliability in Zero-Shot Text Classification</h3>
-                <p class="project-meta">Independent Research · Zero-Shot LLM Evaluation</p>
+                <h3>Class Definitions and Presentation Order in Zero-Shot LLM Classification</h3>
+                <p class="project-meta">Independent Research</p>
                 <ul class="entry-bullets">
-                  <li>Investigated the reliability of prompt evaluation in zero-shot text classification by testing how class-description content and label ordering interact across pretrained models.</li>
-                  <li>Designed disjoint development and confirmation sets, froze the confirmation protocol before evaluation, and completed a research manuscript and supporting code with robustness analyses across multiple models, tasks, scoring rules, and label orders.</li>
+                  <li>Designed controlled zero-shot classification experiments with Phi-3-mini and Qwen2.5-1.5B to study how added class definitions and presentation order affect accuracy.</li>
+                  <li>Separated development and confirmation samples, using definition paraphrases, paired comparisons, and follow-up controls to distinguish candidate-label order from definition-line order. Completed a research manuscript.</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>Aug 2026</time>
               <div>
-                <h3>Decentralized Multi-Agent Coordination via Reinforcement Learning and Local Planning</h3>
+                <h3>Multi-Agent Coordination with Reinforcement Learning and Local Planning</h3>
                 <p class="project-meta">Individual Summer Research Project, Zhejiang University · Supervisor: <a href="http://feimiao.org/" target="_blank" rel="noreferrer">Prof. Fei Miao</a></p>
                 <ul class="entry-bullets">
-                  <li>Combined MAPPO policy learning with local model predictive control in MPE2 to coordinate three communication-free agents covering three targets while reducing collisions.</li>
-                  <li>Evaluated action parameterization and assignment guidance through a 2×2 ablation over five training seeds and 500 episodes per configuration. Continuous actions with assignment guidance reached 41.2% terminal success, 23.6 percentage points above the guided discrete policy; controller tests reduced intervention and action saturation by 9.2 and 14.0 points while success changed from 62.4% to 61.6%.</li>
-                </ul>
-              </div>
-            </article>
-            <article class="entry project-entry">
-              <time>Jul 2025–Jun 2026</time>
-              <div>
-                <h3>MaizeGuard: Lightweight Maize Ear Anomaly Segmentation System <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
-                <ul class="entry-bullets">
-                  <li>Developed a local two-stage system that combines full-image foreground localization and instance splitting with batched segmentation of ear crops, producing per-ear abnormality masks and area ratios.</li>
-                  <li>Designed a three-class annotation workflow and reviewed 402 ears from 180 images to produce 285 human-adjudicated training pseudo-labels. On a six-ear input, CPU dynamic batching increased abnormal-region segmenter throughput from 83.5 to 107.0 ears/s (1.28×); the complete in-memory pipeline averaged 234.5 ms.</li>
-                  <li>Software Copyright Registration: The project software was registered in China (Reg. No. 2026SR0822662, 2026).</li>
+                  <li>Trained and refined MAPPO for cooperative navigation in MPE2 Simple Spread. Behavioral diagnosis and ablations informed training-time assignment guidance and continuous control, raising end-of-episode coverage success from 3.8% to 41.2%.</li>
+                  <li>Compared policies alone, baseline MPC, and MPC with a bound on predicted arrival-cost increases in 1,500 simulation episodes with matched initial conditions. Relative to policies alone, MPC with the bound raised coverage success from 50.6% to 61.6% and reduced collision rate from 3.176% to 2.117%.</li>
                 </ul>
               </div>
             </article>
@@ -126,7 +127,7 @@
 
         <section class="academic-section" id="experience">
           <h2>Work Experience</h2>
-          <h3 class="experience-company"><a href="https://360.net/en/" target="_blank" rel="noreferrer">360 Digital Security Group</a></h3>
+          <h3 class="experience-company"><a href="https://360.net/en/" target="_blank" rel="noreferrer">360 Digital Security Group (Qihoo360)</a></h3>
           <div class="entry-list project-list">
             <article class="entry project-entry">
               <time>Jul–Aug 2026</time>
@@ -134,8 +135,8 @@
                 <h3>AI Application Development Intern</h3>
                 <p class="project-meta">Qwen-VL-Based Visual Data Pre-Annotation Pipeline</p>
                 <ul class="entry-bullets">
-                  <li>Built a Qwen-VL-based object-detection pre-annotation pipeline with API integration, prompt and structured-output design, coordinate conversion, result parsing, visual verification, and COCO-format annotation generation.</li>
-                  <li>Expanded the annotation schema from 3 to 14 classes and established a human-in-the-loop workflow spanning model pre-annotation, programmatic validation, platform import, and manual review, supporting the delivery of approximately 10,000 images.</li>
+                  <li>Built a Qwen-VL object-detection pre-annotation pipeline integrating API calls, structured outputs, coordinate conversion, COCO annotation generation, and visual checks.</li>
+                  <li>Expanded the annotation schema from 3 to 14 classes and connected programmatic validation, platform import, and human review, supporting a single delivery of approximately 10,000 images.</li>
                 </ul>
               </div>
             </article>
@@ -143,10 +144,10 @@
               <time>Jan–Mar 2026</time>
               <div>
                 <h3>AI Engineering Intern (Computer Vision &amp; Edge Deployment)</h3>
-                <p class="project-meta">Objects365-Based YOLOv8 Object Detection and NCNN Inference Pipeline</p>
+                <p class="project-meta">YOLOv8 Object Detection and NCNN Edge Inference</p>
                 <ul class="entry-bullets">
-                  <li>Built a data-processing pipeline for a 50-class detection task that screened and processed more than 460,000 Objects365 v1 images, including class mapping, anomalous-data filtering, COCO-to-YOLO conversion, and visual verification.</li>
-                  <li>Participated in multi-GPU YOLOv8n training, exported the trained model to FP32 NCNN format, and completed single-image object-detection validation at 640 × 640 input resolution.</li>
+                  <li>Built a 50-class training dataset for the team by sourcing, filtering, and processing more than 460,000 images from Objects365 v1 and other datasets, including class mapping, COCO-to-YOLO conversion, and visual verification.</li>
+                  <li>Participated in multi-GPU YOLOv8n training using the prepared dataset, converted the trained model from PyTorch to FP32 NCNN, and validated inference, completing the workflow from data preparation and training to NCNN inference.</li>
                 </ul>
               </div>
             </article>
@@ -156,8 +157,9 @@
         <section class="academic-section" id="skills">
           <h2>Technical Skills</h2>
           <dl class="skills-list">
-            <div><dt>Programming</dt><dd>Python, C/C++, SQL</dd></div>
-            <div><dt>Tools</dt><dd>PyTorch, OpenCV, scikit-learn, Git, Linux/Bash, LaTeX</dd></div>
+            <div><dt>Programming &amp; ML</dt><dd>Python, C/C++, SQL, PyTorch</dd></div>
+            <div><dt>Development Tools</dt><dd>Linux/Bash, Git, LaTeX</dd></div>
+            <div><dt>Languages</dt><dd>IELTS Academic 6.5; CET-6; CET-4</dd></div>
           </dl>
         </section>
 
@@ -168,7 +170,7 @@
         </section>
 
         <footer class="site-footer">
-          <span>© 2026 You Zhang · Last updated: September 2026</span>
+          <span>© 2026 You Zhang · Last updated: November 2026</span>
           <a href="#top">Back to top</a>
         </footer>
       </div>
@@ -214,7 +216,7 @@
         <section class="academic-section" id="about-zh">
           <h2>关于我</h2>
           <p>我通过课程学习、科研实践、项目开发与自主阅读，持续深化对机器学习与系统实现的理解。我尤其关注如何将机器学习模型转化为能够在真实设备上高效、可靠运行的系统。</p>
-          <p>我近期的工作涉及大语言模型实证评测、分散式多智能体协作和轻量化计算机视觉部署。</p>
+          <p>我近期的工作涉及任务感知的推理优化、零样本大语言模型评测和多智能体协作。</p>
           <p>我喜欢将学到的方法实现为可以运行的实验和原型，并记录实现过程中的问题与思考。</p>
         </section>
 
@@ -227,6 +229,7 @@
                 <h3>计算机科学与技术，工学学士</h3>
                 <p>中国农业大学，北京，中国</p>
                 <p class="muted">预计毕业：2027年7月</p>
+                <p>学业奖学金：2025–2026学年一等、2023–2024学年二等。</p>
               </div>
             </article>
           </div>
@@ -245,35 +248,35 @@
           <h2>科研与项目经历</h2>
           <div class="entry-list project-list">
             <article class="entry project-entry">
+              <time>2025.07–2026.06</time>
+              <div>
+                <h3>MaizeGuard：任务感知的推理系统优化 <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
+                <ul class="entry-bullets">
+                  <li>构建支持CPU/CUDA的双ONNX多果穗异常分析系统，并开发应用层运行时原型，通过有界在途任务、CPU工作池和设备执行线程实现流水线阶段重叠。</li>
+                  <li>基于分阶段性能分析优化局部形态学与组件内拆分，保留原图边界语义并验证完整输出等价。在Ryzen 9 7945HX的4个物理核上，对120张分层选取的原尺寸图片开展20次配对遍历；相较同模型整图参考，局部计算将平均CPU推理流程延迟降低51.5%（1.46→0.71秒/图）。</li>
+                  <li>软件著作权登记：项目软件完成计算机软件著作权登记（登记号：2026SR0822662，2026）。</li>
+                </ul>
+              </div>
+            </article>
+            <article class="entry project-entry">
               <time>2026.05–2026.08</time>
               <div>
-                <h3>零样本文本分类中的提示词评估可靠性研究</h3>
-                <p class="project-meta">独立研究 · 零样本大语言模型评测</p>
+                <h3>大语言模型零样本分类中的类别定义与呈现顺序</h3>
+                <p class="project-meta">独立研究</p>
                 <ul class="entry-bullets">
-                  <li>通过测试类别说明内容与标签排列顺序在预训练模型中的交互，研究零样本文本分类中提示词评估的可靠性。</li>
-                  <li>设计互不重叠的开发集与确认集，在评测前冻结确认方案，并完成研究论文与配套代码；进一步在多个模型、任务、评分规则和标签顺序上开展稳健性分析。</li>
+                  <li>使用Phi-3-mini和Qwen2.5-1.5B设计零样本分类受控实验，研究补充类别定义与调整呈现顺序对准确率的影响。</li>
+                  <li>分离实验设计与结果确认样本，通过定义改写、配对比较及后续对照实验，区分候选标签列表顺序与类别定义顺序的影响。已完成研究稿件。</li>
                 </ul>
               </div>
             </article>
             <article class="entry project-entry">
               <time>2026.08</time>
               <div>
-                <h3>基于强化学习与局部规划的分散式多智能体协作</h3>
+                <h3>基于强化学习与局部规划的多智能体协作</h3>
                 <p class="project-meta">浙江大学个人暑期科研项目 · 导师：<a href="http://feimiao.org/" target="_blank" rel="noreferrer">苗菲教授</a></p>
                 <ul class="entry-bullets">
-                  <li>在MPE2中结合MAPPO策略学习与局部模型预测控制，协调三个无通信智能体覆盖三个目标点并减少碰撞。</li>
-                  <li>通过覆盖5个训练种子、每种配置500个评估回合的2×2消融分析动作参数化与分配引导；连续动作与分配引导组合的回合末成功率为41.2%，较带引导的离散策略高23.6个百分点。控制器测试中，干预率和动作饱和率分别降低9.2和14.0个百分点，成功率由62.4%变为61.6%。</li>
-                </ul>
-              </div>
-            </article>
-            <article class="entry project-entry">
-              <time>2025.07–2026.06</time>
-              <div>
-                <h3>MaizeGuard：轻量化玉米果穗异常分割系统 <a href="https://github.com/iyoyovo/MaizeGuard" target="_blank" rel="noreferrer">[GitHub]</a></h3>
-                <ul class="entry-bullets">
-                  <li>开发本地两阶段系统，将整图前景定位与实例拆分同果穗裁剪批量分割结合，输出逐穗异常掩膜及面积率。</li>
-                  <li>设计三类标注流程，审核180张图片中的402根果穗并形成285个经人工裁决的训练伪标签。在6穗输入下，CPU动态批处理将异常分割吞吐量从83.5提升至107.0穗/秒（1.28×），完整内存流程平均延迟为234.5 ms。</li>
-                  <li>软件著作权登记：项目软件完成计算机软件著作权登记（登记号：2026SR0822662，2026）。</li>
+                  <li>在MPE2 Simple Spread中训练并改进MAPPO协作导航策略，结合行为诊断与消融实验，引入训练期目标分配引导和连续控制，将回合末覆盖成功率从3.8%提升至41.2%。</li>
+                  <li>比较策略单独运行、基础MPC和带预测到达代价约束的MPC，在相同初始场景下开展共1,500回合仿真评测。相较策略单独运行，带约束的MPC将覆盖成功率从50.6%提升至61.6%，碰撞率从3.176%降至2.117%。</li>
                 </ul>
               </div>
             </article>
@@ -282,7 +285,7 @@
 
         <section class="academic-section" id="experience-zh">
           <h2>工作经历</h2>
-          <h3 class="experience-company"><a href="https://360.net/index" target="_blank" rel="noreferrer">三六零数字安全科技集团有限公司</a></h3>
+          <h3 class="experience-company"><a href="https://360.net/index" target="_blank" rel="noreferrer">360（360 Digital Security Group / Qihoo360）</a></h3>
           <div class="entry-list project-list">
             <article class="entry project-entry">
               <time>2026.07–2026.08</time>
@@ -290,8 +293,8 @@
                 <h3>AI应用开发实习生</h3>
                 <p class="project-meta">基于Qwen-VL的视觉数据预标注流程</p>
                 <ul class="entry-bullets">
-                  <li>构建基于Qwen-VL的目标检测预标注流程，完成API接入、提示词与结构化输出设计、坐标转换、结果解析、可视化核验和COCO格式标注生成。</li>
-                  <li>将标注类别从3类扩展至14类，建立“模型预标注—程序校验—平台导入—人工审核”的人在环流程，支持约1万张图像的数据交付。</li>
+                  <li>构建基于Qwen-VL的目标检测预标注流程，整合API调用、结构化输出、坐标转换、COCO标注生成与可视化检查。</li>
+                  <li>将标注类别由3类扩展至14类，衔接程序校验、平台导入和人工审核，支持单次约1万张图像的数据交付。</li>
                 </ul>
               </div>
             </article>
@@ -299,10 +302,10 @@
               <time>2026.01–2026.03</time>
               <div>
                 <h3>AI工程实习生（计算机视觉与端侧部署）</h3>
-                <p class="project-meta">基于Objects365的YOLOv8目标检测与NCNN推理链路</p>
+                <p class="project-meta">YOLOv8目标检测与NCNN端侧推理</p>
                 <ul class="entry-bullets">
-                  <li>面向50类目标检测任务构建数据处理流水线，筛选并处理46万余张Objects365 v1图像，完成类别映射、异常数据过滤、COCO到YOLO标注转换及可视化核验。</li>
-                  <li>参与YOLOv8n多GPU训练，将训练模型导出为FP32 NCNN格式，并完成640×640输入的单图目标检测验证。</li>
+                  <li>面向50类目标检测任务，搜集Objects365 v1等数据集，筛选并处理46万余张图像，完成类别映射、COCO到YOLO格式转换与可视化核验，构建团队模型训练数据集。</li>
+                  <li>基于该数据集参与YOLOv8n多GPU训练，完成PyTorch模型到FP32 NCNN格式的转换与推理验证，打通从数据准备、模型训练到NCNN推理的完整流程。</li>
                 </ul>
               </div>
             </article>
@@ -312,8 +315,9 @@
         <section class="academic-section" id="skills-zh">
           <h2>专业技能</h2>
           <dl class="skills-list">
-            <div><dt>编程语言</dt><dd>Python、C/C++、SQL</dd></div>
-            <div><dt>工具</dt><dd>PyTorch、OpenCV、scikit-learn、Git、Linux/Bash、LaTeX</dd></div>
+            <div><dt>编程与机器学习</dt><dd>Python、C/C++、SQL、PyTorch</dd></div>
+            <div><dt>开发工具</dt><dd>Linux/Bash、Git、LaTeX</dd></div>
+            <div><dt>语言能力</dt><dd>雅思（IELTS Academic）6.5；CET-6；CET-4</dd></div>
           </dl>
         </section>
 
@@ -324,7 +328,7 @@
         </section>
 
         <footer class="site-footer">
-          <span>© 2026 张优 · 最后更新：2026年9月</span>
+          <span>© 2026 张优 · 最后更新：2026年11月</span>
           <a href="#top-zh">返回顶部</a>
         </footer>
       </div>
